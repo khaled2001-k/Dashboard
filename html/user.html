@@ -1,0 +1,102 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="flex h-screen">
+   
+    <div id="sidebar" class="fixed inset-y-0 left-0 w-64 bg-gray-800 text-white p-6 flex flex-col justify-between">
+        <div>
+            <h3 class="text-2xl font-bold mb-6 cursor-pointer" id="dashboard-link">Dashboard</h3>
+            <ul>
+                <li>
+                    <a href="./user.html" id="content-link-1" class="block py-2 px-4 rounded hover:bg-gray-700">Users</a>
+                </li>
+                <li>
+                    <a href="./skills.html" id="content-link-skills" class="block py-2 px-4 rounded hover:bg-gray-700">Skills</a>
+                </li>
+                <li>
+                    <a href="./offers.html" id="content-link-offers" class="block py-2 px-4 rounded hover:bg-gray-700">Offers</a>
+                </li>
+                <li>
+                    <a href="./requirements.html" id="content-link-requirements" class="block py-2 px-4 rounded hover:bg-gray-700">Requirements</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mt-auto">
+            <a href="index.html" class="block py-2 px-4 rounded bg-red-600 hover:bg-red-700">Logout</a>
+        </div>
+    </div>
+   
+    <div id="content" class="flex-grow ml-64 p-6 overflow-auto">
+        <h2 class="text-2xl font-bold mb-4">Users</h2>
+        <div id="table-container">
+            <p>Loading users...</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/user.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="flex h-screen">
+    <!-- Sidebar -->
+    <div id="sidebar" class="fixed inset-y-0 left-0 w-64 bg-gray-800 text-white p-6 flex flex-col justify-between">
+        <div>
+            <h3 class="text-2xl font-bold mb-6 cursor-pointer" id="dashboard-link">Dashboard</h3>
+            <ul>
+                <li>
+                    <a href="./user.html" id="content-link-1" class="block py-2 px-4 rounded hover:bg-gray-700">Users</a>
+                </li>
+                <li>
+                    <a href="./skills.html" id="content-link-skills" class="block py-2 px-4 rounded hover:bg-gray-700">Skills</a>
+                </li>
+                <li>
+                    <a href="./offers.html" id="content-link-offers" class="block py-2 px-4 rounded hover:bg-gray-700">Offers</a>
+                </li>
+                <li>
+                    <a href="./requirements.html" id="content-link-requirements" class="block py-2 px-4 rounded hover:bg-gray-700">Requirements</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mt-auto">
+            <a href="index.html" id="logout-btn" class="block py-2 px-4 rounded bg-red-600 hover:bg-red-700">Logout</a>
+        </div>
+    </div>
+    <!-- Main content -->
+    <div id="content" class="flex-grow ml-64 p-6 overflow-auto">
+        <h2 class="text-2xl font-bold mb-4">User Details</h2>
+        <div id="user-details" class="grid grid-cols-2 gap-4 bg-white shadow-md rounded p-4">
+            <p>Loading user details...</p>
+        </div>
+        <h2 class="text-2xl font-bold mt-6 mb-4">User Places</h2>
+        <div id="places-container">
+            <p>Loading places...</p>
+        </div>
+        <h2 class="text-2xl font-bold mt-6 mb-4">User Reviews</h2>
+        <div id="reviews-container">
+            <p>Loading reviews...</p>
+        </div>
+    </div>
+
+    <!-- Notification -->
+    <div id="notification" class="fixed top-5 right-0 bg-green-500 text-white p-4 rounded shadow-md transition-transform transform translate-x-full opacity-0">
+        Action successful
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/user.js"></script>
+</body>
+</html>
